@@ -43,7 +43,7 @@ sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bi
 
 **Kubectl** is a command line interface for running commands against Kubernetes clusters. kubectl looks for a file named config in the $HOME/.kube directory. You can specify other kubeconfig files by setting the KUBECONFIG environment variable or by setting the --kubeconfig flag.
 
-### Install `kubectl` 
+### Install kubectl
 
 ```
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
@@ -53,6 +53,7 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s http
 
 ## References
 
+- [GitMoji](https://gitmoji.carloscuesta.me)
 - https://minikube.sigs.k8s.io/docs/overview/
 - https://www.tecrobust.com/install-virtualbox-6-0-on-ubuntu-18-04-19-04/
 - https://www.virtualbox.org/wiki/Linux_Downloads
