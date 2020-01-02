@@ -43,10 +43,7 @@ sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bi
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 ```
 
-- (optional) Enabling shell autocompletion adding following to your `~/.zshrc`
-```
-source <(kubectl completion zsh)
-```
+- (optional) Enabling shell autocompletion adding following to your `~/.zshrc` by adding `kubectl` to your plug-in list.
 
 ## References
 
