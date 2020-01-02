@@ -37,13 +37,20 @@ sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bi
 - Download and install minikube ```curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_1.6.2.deb && sudo dpkg -i minikube_1.6.2.deb```
 - Start a cluster using the virtualbox driver ```sudo minikube start --vm-driver=virtualbox```
 - To make virtualbox the default driver ```sudo minikube config set vm-driver virtualbox```
-- Install `kubectl` : ```curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl```
+- Install `kubectl` 
 
+```
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+```
 
-
+- (optional) Enabling shell autocompletion adding following to your `~/.zshrc`
+```
+source <(kubectl completion zsh)
+```
 
 ## References
 
 - https://minikube.sigs.k8s.io/docs/overview/
 - https://www.tecrobust.com/install-virtualbox-6-0-on-ubuntu-18-04-19-04/
 - https://www.virtualbox.org/wiki/Linux_Downloads
+- https://kubernetes.io/docs/tasks/tools/install-kubectl/#enabling-shell-autocompletion
