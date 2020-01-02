@@ -51,6 +51,8 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s http
 
 - (optional) Enabling shell autocompletion adding following to your `~/.zshrc` by adding `kubectl` to your plug-in list.
 
+To see available resources using GUI type `minikube dashboard`
+
 ## References
 
 - [GitMoji](https://gitmoji.carloscuesta.me)
